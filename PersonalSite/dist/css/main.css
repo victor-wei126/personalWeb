@@ -1,0 +1,137 @@
+.container {
+  max-width: 1280px;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  margin: auto; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out; }
+
+a:hover {
+  color: #f39c12; }
+
+ul {
+  list-style: none; }
+
+.head {
+  font-size: 3rem;
+  text-align: center; }
+
+.btn {
+  display: inline-block;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  text-align: center; }
+  .btn:hover {
+    color: #f1c40f;
+    background: #202b38; }
+
+.required {
+  color: red; }
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Gelasio', serif; }
+
+#main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/dist/img/main.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh; }
+  #main-header #navbar {
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 0.3rem; }
+    #main-header #navbar .logo {
+      display: flex;
+      background: #333;
+      color: #fff;
+      border-radius: 50%;
+      height: 90px;
+      width: 90px;
+      align-items: center;
+      justify-content: center;
+      margin: auto; }
+      #main-header #navbar .logo h1 {
+        padding-top: 0.3rem;
+        font-size: 2.5rem; }
+    #main-header #navbar ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      padding-top: 3rem; }
+    #main-header #navbar .type-text,
+    #main-header #navbar h3 {
+      color: #ecf0f1; }
+    #main-header #navbar .type-text {
+      padding: 5rem 0;
+      font-size: 3.5rem; }
+    #main-header #navbar h3 {
+      font-size: 2rem; }
+
+#about {
+  text-align: center;
+  padding: 5rem; }
+  #about .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5; }
+    #about .about-content h2 {
+      padding-bottom: 0.5rem; }
+    #about .about-content p {
+      padding-bottom: 2.5rem;
+      font-size: 1.2rem; }
+
+#projects {
+  background: #f3f3f3;
+  padding: 5rem; }
+  #projects img {
+    height: 300px;
+    width: 300px; }
+  #projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    text-align: center; }
+
+#contact {
+  padding: 5rem; }
+  #contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto; }
+    #contact .contact-form label {
+      padding-top: 1rem;
+      padding-bottom: 0.6rem; }
+    #contact .contact-form input, #contact .contact-form textarea {
+      padding: 0.8rem;
+      border: #2c3e50 solid 1px; }
+    #contact .contact-form a {
+      max-width: 200px;
+      margin: 2rem auto; }
+
+#footer {
+  background: #f1c40f;
+  padding: 2rem;
+  color: #fff; }
+  #footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #footer .footer-content ul {
+      display: flex; }
+      #footer .footer-content ul li {
+        padding-right: 0.5rem; }

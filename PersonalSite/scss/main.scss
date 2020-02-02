@@ -1,0 +1,150 @@
+@import 'variables';
+@import 'utilities';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gelasio', serif;
+}
+
+// Header
+#main-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/dist/img/main.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 100vh;
+    #navbar {
+        text-align: center;
+        padding-top: 2rem;
+        padding-right: 0.3rem;
+    
+        .logo {
+            display: flex;
+            background: #333;
+            color: #fff;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+    
+            h1 {
+                padding-top: 0.3rem;
+                font-size: 2.5rem;
+            }
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding-top: 3rem;
+        }
+
+        .type-text,
+        h3 {
+            color: $light-color;
+        }
+
+        .type-text {
+            padding: 5rem 0;
+            font-size: 3.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}
+
+// About Section
+#about {
+    text-align: center;
+    padding: 5rem;
+
+    .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.5;
+        
+        h2 {
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            padding-bottom: 2.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Projects Section
+#projects {
+    background: rgb(243, 243, 243);
+    padding: 5rem;
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 3rem;
+        text-align: center;
+    }
+}
+
+// Contact Section
+#contact {
+    padding: 5rem;
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+
+        label {
+            padding-top: 1rem;
+            padding-bottom: 0.6rem;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: $dark-color solid 1px;
+        }
+
+        a {
+            max-width: 200px;
+            margin: 2rem auto;
+        }
+    }
+}
+
+// Footer
+#footer {
+    background: $secondary-color;
+    padding: 2rem;
+    color: #fff;
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+
+            li {
+                padding-right: 0.5rem;
+            }
+        }
+    }
+}
